@@ -6,12 +6,12 @@ require_relative 'selection_sort'
 require_relative 'merge_sort'
 require_relative 'quick_sort'
 require_relative 'heap_sort'
-# require_relative 'radix_sort'
+require_relative 'radix_sort'
 require 'benchmark'
 require 'byebug'
 
 array = [8, 2, 16, 3, 9, 1, 3, 20, 7, 19, 5, 101, 3, 17]
-puts "Unsorted:   #{array}"
+puts "Unsorted: #{array}"
 
 puts "\nBubbleSort"
 puts "Output: #{BubbleSort.new(array.dup).sort}"
@@ -43,7 +43,7 @@ puts "Output: #{HeapSort.new(array.dup).sort}"
 tmp_array = array.dup
 puts "Performance: #{Benchmark.measure { HeapSort.new(tmp_array).sort }}\n"
 
-# puts "\nRadixSort"
-# puts "Output: #{RadixSort.new(array.dup).sort}"
-# tmp_array = array.dup
-# puts "Performance: #{Benchmark.measure { RadixSort.new(tmp_array).sort }}\n"
+puts "\nRadixSort"
+puts "Output: #{RadixSort.new(array.dup).sort}"
+tmp_array = array.dup
+puts "Performance: #{Benchmark.measure { RadixSort.new(tmp_array).sort }}\n"
