@@ -15,35 +15,35 @@ puts "Unsorted: #{array}"
 
 puts "\nBubbleSort"
 puts "Output: #{BubbleSort.new(array.dup).sort}"
-tmp_array = array.dup
-puts "Performance: #{Benchmark.measure { BubbleSort.new(tmp_array).sort }}\n"
+sorter = BubbleSort.new(array.dup)
+puts "Performance: #{Benchmark.measure { sorter.sort }}\n"
 
 puts "\nInsertSort"
 puts "Output: #{InsertSort.new(array.dup).sort}"
-tmp_array = array.dup
-puts "Performance: #{Benchmark.measure { InsertSort.new(tmp_array).sort }}\n"
+sorter = InsertSort.new(array.dup)
+puts "Performance: #{Benchmark.measure { sorter.sort }}\n"
 
 puts "\nSelectionSort"
 puts "Output: #{SelectionSort.new(array.dup).sort}"
-tmp_array = array.dup
-puts "Performance: #{Benchmark.measure { SelectionSort.new(tmp_array).sort }}\n"
+sorter = SelectionSort.new(array.dup)
+puts "Performance: #{Benchmark.measure { sorter.sort }}\n"
 
 puts "\nMergeSort"
 puts "Output: #{MergeSort.new(array.dup).sort}"
-tmp_array = array.dup
-puts "Performance: #{Benchmark.measure { MergeSort.new(tmp_array).sort }}\n"
+sorter = MergeSort.new(array.dup)
+puts "Performance: #{Benchmark.measure { sorter.sort }}\n"
 
 puts "\nQuickSort"
 puts "Output: #{QuickSort.new(array.dup).sort}"
-tmp_array = array.dup
-puts "Performance: #{Benchmark.measure { QuickSort.new(tmp_array).sort }}\n"
+sorter = QuickSort.new(array.dup)
+puts "Performance: #{Benchmark.measure { sorter.sort }}\n"
 
 puts "\nHeapSort"
 puts "Output: #{HeapSort.new(array.dup).sort}"
-tmp_array = array.dup
-puts "Performance: #{Benchmark.measure { HeapSort.new(tmp_array).sort }}\n"
+sorter = HeapSort.new(array.dup)
+puts "Performance: #{Benchmark.measure { sorter.sort }}\n"
 
 puts "\nRadixSort"
 puts "Output: #{RadixSort.new(array.dup).sort}"
-tmp_array = array.dup
-puts "Performance: #{Benchmark.measure { RadixSort.new(tmp_array).sort }}\n"
+sorter = RadixSort.new(array.dup)
+puts "Performance: #{Benchmark.measure { sorter.sort }}\n"
