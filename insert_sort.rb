@@ -33,5 +33,5 @@ class InsertSort
 
   private
 
-  attr_reader :array
+  attr_accessor :array
 end

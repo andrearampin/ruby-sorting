@@ -25,7 +25,7 @@ class BubbleSort
         next if array[index + 1].nil?
         next unless array[index] > array[index + 1]
 
-        @array[index], @array[index + 1] = @array[index + 1], @array[index]
+        array[index], array[index + 1] = array[index + 1], array[index]
       end
       limit -= 1
     end
@@ -34,5 +34,5 @@ class BubbleSort
 
   private
 
-  attr_reader :array
+  attr_accessor :array
 end

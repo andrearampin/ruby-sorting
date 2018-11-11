@@ -32,5 +32,5 @@ class SelectionSort
 
   private
 
-  attr_reader :array
+  attr_accessor :array
 end

@@ -24,7 +24,7 @@ class QuickSort
 
   private
 
-  attr_reader :array
+  attr_accessor :array
 
   # Pick a pivot and use it to split/sort the elements in the unsorted array.
   # @param [Array]

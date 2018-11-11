@@ -24,7 +24,7 @@ class MergeSort
 
   private
 
-  attr_reader :array
+  attr_accessor :array
 
   # Recursively split the unsorted array in two and then merge the two parts.
   # @param [Array]
