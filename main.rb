@@ -5,7 +5,7 @@ require_relative 'insert_sort'
 require_relative 'selection_sort'
 require_relative 'merge_sort'
 require_relative 'quick_sort'
-# require_relative 'heap_sort'
+require_relative 'heap_sort'
 # require_relative 'radix_sort'
 require 'benchmark'
 require 'byebug'
@@ -38,10 +38,10 @@ puts "Output: #{QuickSort.new(array.dup).sort}"
 tmp_array = array.dup
 puts "Performance: #{Benchmark.measure { QuickSort.new(tmp_array).sort }}\n"
 
-# puts "\nHeapSort"
-# puts "Output: #{HeapSort.new(array.dup).sort}"
-# tmp_array = array.dup
-# puts "Performance: #{Benchmark.measure { HeapSort.new(tmp_array).sort }}\n"
+puts "\nHeapSort"
+puts "Output: #{HeapSort.new(array.dup).sort}"
+tmp_array = array.dup
+puts "Performance: #{Benchmark.measure { HeapSort.new(tmp_array).sort }}\n"
 
 # puts "\nRadixSort"
 # puts "Output: #{RadixSort.new(array.dup).sort}"
